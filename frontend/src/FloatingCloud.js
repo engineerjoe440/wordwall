@@ -3,6 +3,11 @@ import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 import { TagCloud } from 'react-tagcloud'
 
+const colorOptions = {
+  luminosity: 'dark',
+  count: 27,
+};
+
 const WordPaper = styled(Paper)(({ theme }) => ({
     // width: 120,
     // height: 120,
@@ -49,6 +54,7 @@ export default function FloatingCloud({wall_id = "test", onClick=() => {}}) {
             minSize={20}
             maxSize={64}
             tags={words}
+            colorOptions={colorOptions}
         />
       </WordPaper>
     </>
