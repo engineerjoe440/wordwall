@@ -1,0 +1,5 @@
+[application]
+site_url = ""
+site_name = "WordWall"
+cross_site_origins = []
+storage_path = ""
