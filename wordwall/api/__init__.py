@@ -9,7 +9,7 @@ License: MIT
 
 from fastapi import APIRouter
 
-from . import walls, words
+from ...backend.wordwall.api import walls, words
 from ..session import Manager
 
 router = APIRouter(prefix="/api/v1")

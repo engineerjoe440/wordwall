@@ -21,7 +21,8 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from loguru import logger
 
-from . import __header__, __version__, api
+from . import __header__, __version__
+from . import api
 from .configuration import settings
 from .database import connect_database
 from .session import Manager
